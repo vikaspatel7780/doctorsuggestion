@@ -1,75 +1,111 @@
-# DoctorSuggestion 🩺  
-AI-Powered Health Chat, Medical Report Analysis & Doctor Recommendation App
+# 🩺 DoctorSuggestion  
+### AI-Powered Health Assistant, Medical Report Analysis & Doctor Recommendation App
 
-## Overview
-DoctorSuggestion is an Android application that uses **Artificial Intelligence powered by the Google Gemini API** to assist users with health-related concerns. The app enables users to **upload medical reports**, **chat with AI about health problems**, and receive **nearby doctor suggestions when a condition is identified as critical**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-Kotlin-3DDC84?style=for-the-badge&logo=android" />
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-UI-4285F4?style=for-the-badge&logo=jetpackcompose" />
+  <img src="https://img.shields.io/badge/Google-Gemini%20API-FF6F00?style=for-the-badge&logo=google" />
+  <img src="https://img.shields.io/badge/MVVM-Architecture-blue?style=for-the-badge" />
+</p>
 
-The application focuses on **safe health guidance**, **early awareness**, and **timely medical action** without providing medical diagnosis or prescriptions.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-yellow?style=flat-square" />
+  <img src="https://img.shields.io/badge/AI-Health%20Assistant-green?style=flat-square" />
+</p>
 
 ---
 
-## Key Features
+## 📌 Overview
+
+**DoctorSuggestion** is an Android application that leverages **Artificial Intelligence powered by the Google Gemini API** to assist users with health-related concerns.
+
+The app enables users to:
+📄 Upload and analyze medical reports
+🤖 Chat with AI for general health guidance
+🏥 Get nearby doctor suggestions when potential risks are detected
+
+The goal is to promote **early awareness**, **safe health guidance**, and **timely medical action** — while **never replacing professional medical advice**.
+
+---
+
+## ✨ Key Features
 
 ### 🤖 AI Health Chat
-- Chat with AI about health problems
-- Powered by Google Gemini API
-- Provides general health suggestions
-- Detects critical symptoms and suggests doctors
-
-### 📄 Medical Report Analysis (Primary Flow)
-- Upload medical reports
-- AI analyzes reports using Gemini API
-- Classifies reports as **Normal** or **Critical**
-- Critical reports trigger doctor suggestions
-
-### 🏥 Doctor Recommendation
-- Suggests nearby doctors for critical conditions
-- Displays doctor list with basic details
-- Allows users to select a doctor
-
-### 📅 Appointment Booking
-- Book appointments directly from the app
-- Store appointment details locally
+Chat with AI about general health concerns
+Powered by **Google Gemini API**
+Provides informational (non-diagnostic) health guidance
+Detects potentially critical symptoms
+Suggests consulting nearby doctors when required
 
 ---
 
-## Application Workflow
+### 📄 Medical Report Analysis (Primary Flow)
+Upload medical reports (lab results, test summaries)
+AI processes reports using **Google Gemini API**
+Extracts key health indicators and observations
+Classifies reports as:
+  - 🟢 **Normal** — No immediate risk indicators
+  - 🔴 **Critical** — Potential health concerns identified
+🧠 **Clinical Assistance (In Development)**  
+  - Critical reports trigger **context-aware doctor recommendations**
 
-### Medical Report–First Flow
+---
+
+### 🏥 Doctor Recommendation
+Suggests nearby doctors for critical cases
+Displays basic doctor information:
+  - Name
+  - Specialization
+  - Location
+Allows users to choose a doctor for follow-up
+
+---
+
+### 📅 Appointment Booking
+Book appointments directly from the app
+Store appointment details locally for easy access
+
+---
+
+## 🔄 Application Workflow
+
+### 🧪 Medical Report–First Flow
 1. User uploads a medical report  
 2. AI analyzes the report  
-3. Condition is classified as Normal or Critical  
-4. Normal → General guidance shown  
+3. Condition classified as **Normal** or **Critical**  
+4. Normal → General health guidance shown  
 5. Critical → Nearby doctors suggested  
 6. User books an appointment  
 
-### AI Chat Flow
+---
+
+### 💬 AI Health Chat Flow
 1. User chats with AI about health issues  
-2. AI provides general suggestions  
-3. If symptoms are critical → Doctor list is shown  
+2. AI provides general guidance  
+3. Critical symptoms detected → Doctor suggestions shown  
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-### Android
-- Kotlin
-- Jetpack Compose
-- Navigation Compose
-- MVVM Architecture
+### 📱 Android
+<p>
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MVVM-Architecture-blue?style=for-the-badge"/>
+</p>
 
-### AI & APIs
-- Google Gemini API
-- Retrofit for network communication
+### 🤖 AI & Networking
+<p>
+  <img src="https://img.shields.io/badge/Google%20Gemini-AI-orange?style=for-the-badge&logo=google"/>
+  <img src="https://img.shields.io/badge/Retrofit-Networking-green?style=for-the-badge"/>
+</p>
 
-### Storage
-- Room Database
-- DataStore / SharedPreferences
-
-### Tools
-- Android Studio
-- Git & GitHub
-- Postman
+### 💾 Storage
+<p>
+  <img src="https://img.shields.io/badge/Room-Database-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/DataStore-Preferences-blue?style=for-the-badge"/>
+</p>
 
 ---
 
