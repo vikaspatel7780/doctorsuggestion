@@ -108,6 +108,45 @@ Store appointment details locally for easy access
 </p>
 
 ---
+## 🔄 System Workflow
+
+### 🧪 Medical Report–First Flow (Primary)
+
+```mermaid
+flowchart TD
+    A[User Uploads Medical Report] --> B[AI Analysis - Gemini API]
+    B --> C{Condition Classification}
+    C -->|Normal| D[Show General Guidance]
+    C -->|Critical| E[Suggest Nearby Doctors]
+    E --> F[User Books Appointment]
+
+```
+---
+
+### 💬 AI Health Chat Flow
+
+```mermaid
+flowchart TD
+     A[User Enters Health Query] --> B[AI Processes Query]
+    B --> C[AI Provides Health Suggestions]
+
+```
+
+---
+
+## 🧠 System Architecture
+
+```mermaid
+flowchart LR
+    UI[Jetpack Compose UI] --> VM[ViewModel - MVVM]
+    VM --> REPO[Repository Layer]
+    REPO --> API[Gemini API]
+    REPO --> DB[Room Database]
+
+```
+
+---
+
 
 ## Project Structure
 
