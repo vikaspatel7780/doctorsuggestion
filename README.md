@@ -1,52 +1,70 @@
 # DoctorSuggestion 🩺  
-AI-Powered Health Chat & Medical Report Assistant
+AI-Powered Health Chat, Medical Report Analysis & Doctor Recommendation App
 
 ## Overview
-DoctorSuggestion is an Android application that leverages **Google Gemini API** to assist users with health-related questions through AI-powered chat and medical report scanning. The app is designed to provide **safe, non-diagnostic health guidance** and help users digitally manage their medical reports.
+DoctorSuggestion is an Android application that uses **Artificial Intelligence powered by the Google Gemini API** to assist users with health-related concerns. The app enables users to **upload medical reports**, **chat with AI about health problems**, and receive **nearby doctor suggestions when a condition is identified as critical**.
 
-The goal of DoctorSuggestion is to improve health awareness and accessibility using conversational AI while maintaining privacy and clarity.
+The application focuses on **safe health guidance**, **early awareness**, and **timely medical action** without providing medical diagnosis or prescriptions.
 
 ---
 
 ## Key Features
 
-### 🤖 AI Health Chat (Gemini API)
-- Chat-based interaction for health-related questions
+### 🤖 AI Health Chat
+- Chat with AI about health problems
 - Powered by Google Gemini API
-- Context-aware, short, and clear responses
-- No disease diagnosis or medicine prescription
+- Provides general health suggestions
+- Detects critical symptoms and suggests doctors
 
-### 📄 Medical Report Scanning
-- Scan and upload medical reports
-- Store reports locally for future reference
-- View reports inside the app
+### 📄 Medical Report Analysis (Primary Flow)
+- Upload medical reports
+- AI analyzes reports using Gemini API
+- Classifies reports as **Normal** or **Critical**
+- Critical reports trigger doctor suggestions
 
-### 🧠 Smart Assistance
-- Understands common health symptoms
-- Provides general wellness suggestions
-- Encourages professional medical consultation when needed
+### 🏥 Doctor Recommendation
+- Suggests nearby doctors for critical conditions
+- Displays doctor list with basic details
+- Allows users to select a doctor
 
-### 🔐 User Authentication
-- Login & Signup flow
-- Secure token-based session handling
+### 📅 Appointment Booking
+- Book appointments directly from the app
+- Store appointment details locally
+
+---
+
+## Application Workflow
+
+### Medical Report–First Flow
+1. User uploads a medical report  
+2. AI analyzes the report  
+3. Condition is classified as Normal or Critical  
+4. Normal → General guidance shown  
+5. Critical → Nearby doctors suggested  
+6. User books an appointment  
+
+### AI Chat Flow
+1. User chats with AI about health issues  
+2. AI provides general suggestions  
+3. If symptoms are critical → Doctor list is shown  
 
 ---
 
 ## Tech Stack
 
 ### Android
-- **Language:** Kotlin
-- **UI:** Jetpack Compose
-- **Architecture:** MVVM
-- **Navigation:** Navigation Compose
+- Kotlin
+- Jetpack Compose
+- Navigation Compose
+- MVVM Architecture
 
 ### AI & APIs
-- **Google Gemini API** (for AI chat)
-- Retrofit for API communication
+- Google Gemini API
+- Retrofit for network communication
 
 ### Storage
-- Room Database (medical reports)
-- SharedPreferences / DataStore
+- Room Database
+- DataStore / SharedPreferences
 
 ### Tools
 - Android Studio
