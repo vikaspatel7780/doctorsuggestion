@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "793209147278",
+    "project_id": "voicehealth-vs",
+    "storage_bucket": "voicehealth-vs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793209147278:android:7ff1f1a918a22899f39edf",
+        "android_client_info": {
+          "package_name": "com.myapp.voicehealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrRq-P7XZVbtF5_QqLZTEJiiylUU2ktJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
